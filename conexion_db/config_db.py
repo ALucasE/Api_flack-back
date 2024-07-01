@@ -1,7 +1,7 @@
 import mysql.connector
 from mysql.connector import Error
 error = Error
-
+# Produccion
 config_dev = {
     'user': 'root',
     'password': '',
@@ -9,6 +9,12 @@ config_dev = {
     'database': 'jacarandaclienteuser'
 }
 
-config_prod = {} # proximamente, despliegue
+# Despliegue
+config_prod = {
+    'user': 'DrKRazieL',
+    'password': '@Jacaranda',
+    'host': 'DrKRazieL.mysql.pythonanywhere-services.com',
+    'database': 'DrKRazieL$jacaranda'
+    }
 
 conexion = mysql.connector.connect(**config_dev)
