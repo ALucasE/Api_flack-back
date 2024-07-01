@@ -13,7 +13,7 @@ from componentes.modelo_producto import editar_producto
 
 
 #Mostar todos los productos
-@app.route('/api/productos')
+@app.route('/api/productos', methods=['GET'])
 def obtener_productos():
     data = todos_los_productos()
     return jsonify(data)
