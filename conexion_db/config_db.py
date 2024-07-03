@@ -11,10 +11,10 @@ config_dev = {
 
 # Despliegue
 config_prod = {
-    'user': 'DrKRazieL',
-    'password': '@Jacaranda',
-    'host': 'DrKRazieL.mysql.pythonanywhere-services.com',
-    'database': 'DrKRazieL$jacaranda'
+    'user': '',
+    'password': '',
+    'host': '',
+    'database': ''
     }
 
 conexion = mysql.connector.connect(**config_dev)
